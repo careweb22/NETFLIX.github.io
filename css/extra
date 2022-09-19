@@ -1,0 +1,108 @@
+
+
+/* hero section start */
+.hero {
+    height: 80vh;
+}
+
+
+
+/* slider section start */
+.slider {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.glider-contain span {
+    line-height: 50px;
+}
+
+.glider-next {
+    right: 20px;
+}
+/* slider section end */
+
+
+
+
+/* mission-impossible section start */
+.mission-impossible {
+    background-image: url(../img/mission-impossible-add-bg.png);
+    background-size: cover;
+}
+
+.mission-impossible .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.mission-impossible p {
+    text-align: end;
+}
+/* mission-impossible-add section end */
+
+
+
+
+
+  <!-- glider -->
+  <link rel="stylesheet" href="css/glider.css">
+
+
+
+<section class="slider section-p">
+    <div class="container">
+      <div class="glider-contain multiple">
+        <span>popular series</span>
+        <button class="glider-prev"><i class="fas fa-angle-left"></i></button>
+        <div class="glider">
+          <figure><blockquote><img src="img/sider/last-left.png" alt=""></blockquote></figure>
+          <figure><blockquote><img src="img/sider/100.jpg" alt=""></blockquote></figure>
+          <figure><blockquote><img src="img/sider/black-list.jpg" alt=""></blockquote></figure>
+          <figure><blockquote><img src="img/sider/lucifer.jpg" alt=""></blockquote></figure>
+          <figure><blockquote><img src="img/sider/prison-break.jpg" alt=""></blockquote></figure>
+          <figure><blockquote><img src="img/sider/last-right.png" alt=""></blockquote></figure>
+        </div>
+        <button class="glider-next"><i class="fas fa-angle-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission-impossible section-p">
+    <div class="container grid-two-col">
+      <div class="left-side">
+        <img src="img/mission-impossible-add.jpg" alt="">
+      </div>
+      <div class="right-side">
+        <div class="button-bar">
+          <a href="#" class="btn btn-yellow">2022</a>
+          <a href="#" class="btn btn-skyblue">ACTION</a>
+          <a href="#" class="btn btn-orange">ADVENTURE</a>
+        </div>
+        <h2>MISSION : IMPOSSIBLE</h2>
+        <p>Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions. Arms dealer John Lark and a group of terrorists known as the Apostles plan to use three plutonium cores for a simultaneous nuclear attack on the Vatican. Jerusalem and Mecca, Saudi Arabia. When the weapons go missing, Ethan and his crew find themselves in a desperate race against time to prevent them from falling into the wrong hands.</p>
+        <div class="button-bar mt-30">
+          <a href="#" class="btn btn-theme"><i class="fas fa-play"></i> PLAY TRAILER</a>
+          <a href="#" class="btn btn-dark"><i class="fas fa-plus"></i> ADD TO LIST</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- glider js -->
+  <script src="js/glider.js"></script>
+  <script>
+    new Glider(document.querySelector('.glider'), {
+    slidesToScroll: 1,
+    slidesToShow: 5.5,
+    draggable: true,
+    dots: '.dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+  });
+  </script>
